@@ -5,7 +5,8 @@ Data Preprocessing- Data is preprocessed for semantic analysis before creating t
 LSTM architecture. 
 For the preprocessing of data, Load the dataset obtained into the system and visualize it using python libraries like matplotlib,pandas etc (identifying the
 important parameters which are dependent variables in the dataset). 
-Next we convert all the reviews into lowercase to make them similar in pattern.  After this, Data Cleaning is necessary for efficient working of the model, For
+Next we convert all the reviews into lowercase to make them similar in pattern. 
+ After this, Data Cleaning is necessary for efficient working of the model, For
 Data Cleaning, Remove all the punctuation from the reviews as they are not relevant while predicting the sentiments, Remove all the un-useful waste data
 before actual work start . 
 At last,Create a list of reviews using python library (pandas) as dependent
