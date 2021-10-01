@@ -12,32 +12,32 @@ At last,Create a list of reviews using python library (pandas) as dependent
 variables. 
 
 Tokenization- 
- Tokenization is performed before sentiment analysis for classification of thedata over different sentiments.  For this,Create a vocabulary to integer mapping dictionary to tokenize each words. 
- Encode the words so that the model can easily recognize it as a variable or a parameter. 
- Analyze the length of the reviews. 
- Now to make the dataset efficient we need to remove the outliners present in it. So we find all the reviews which are extremely long or extremely short and remove them to maintain consistency in the dataset.
- Now the main task is to pad/truncate the reviews in remaining data.
+. Tokenization is performed before sentiment analysis for classification of thedata over different sentiments.  For this,Create a vocabulary to integer mapping dictionary to tokenize each words. 
+.  Encode the words so that the model can easily recognize it as a variable or a parameter. 
+.  Analyze the length of the reviews. 
+.  Now to make the dataset efficient we need to remove the outliners present in it. So we find all the reviews which are extremely long or extremely short and remove them to maintain consistency in the dataset.
+.  Now the main task is to pad/truncate the reviews in remaining data.
 
 Sentiment Analysis-
- We perform Sentiment Analysis by our tokenized bag of words using python libraries (NLTK / TEXTBLOB) to process the textual data. 
- Sentiment Analysis is performed for classification of data over the different sentiments before analyzing it on the time series. 
- We create a sparse matrix of the words for sentiment Analysis. 
- After this we need to apply time series on the reviews which are now in the form of sparse matrix as a model of bag of words.
+.  We perform Sentiment Analysis by our tokenized bag of words using python libraries (NLTK / TEXTBLOB) to process the textual data. 
+.  Sentiment Analysis is performed for classification of data over the different sentiments before analyzing it on the time series. 
+.  We create a sparse matrix of the words for sentiment Analysis. 
+.  After this we need to apply time series on the reviews which are now in the form of sparse matrix as a model of bag of words.
 
 Splitting- 
- Next we split the dataset into 3 parts:
+.  Next we split the dataset into 3 parts:
 1. Training set
 2. Validation set
 3. Testing set
- With the help of K-Fold validation we split the dataset into training and testing set using various combinations to make our prediction model more efficient
+. With the help of K-Fold validation we split the dataset into training and testing set using various combinations to make our prediction model more efficient
 and robust. 
- The data is then divided into various batches as we are applying batch processing in our model.
+.  The data is then divided into various batches as we are applying batch processing in our model.
 
 Implementing RNN with LSTM Architecture- 
- After this we create a classifier of recurrent neural network using deep learning techniques for creating time series of the data obtained from sentiment analysis
+.  After this we create a classifier of recurrent neural network using deep learning techniques for creating time series of the data obtained from sentiment analysis
 and we then apply the LSTM architecture over it to remove the problem of long distance dependencies ,exploding gradient and vanishing gradient.
- Now we create a neural network of multiple layers (number of layers will be determined during testing period of project for performance evaluation). Then
+.  Now we create a neural network of multiple layers (number of layers will be determined during testing period of project for performance evaluation). Then
 the model is trained for suitable number of epochs. 
 
 Training and Testing- 
- Finally the model created is tested for the test data as well as for the user generated data and evaluated for the efficiency
+.  Finally the model created is tested for the test data as well as for the user generated data and evaluated for the efficiency
